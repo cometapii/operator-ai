@@ -12,7 +12,7 @@ const AZURE_API_VERSION = "2024-05-01-preview";
 
 // KLUCZOWE: Używamy Node.js runtime zamiast Edge dla prawdziwego streamingu
 export const runtime = 'nodejs';
-export const maxDuration = 3600; // 1 godzina
+export const maxDuration = 300; // 5 minut (max dla Vercel hobby plan)
 
 const client = new AzureOpenAI({
   deployment: AZURE_DEPLOYMENT,
